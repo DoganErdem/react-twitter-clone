@@ -1,0 +1,22 @@
+@import "mixing";
+@import "leftside";
+@import "tweet";
+@import "rightside";
+
+
+.container{
+    display: flex;
+    background-color: black;
+    box-sizing: border-box;
+    flex-flow: row nowrap;
+    margin: 0;
+    width: 100%;
+    color: white;    
+    
+}
+
+
+
+
+
+
