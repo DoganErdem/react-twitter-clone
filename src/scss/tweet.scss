@@ -9,6 +9,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    
 
     &-head{
         display: flex;
@@ -17,11 +18,16 @@
         min-width: 55%;
         padding: 0px;
         border-right: 1px solid $color-border;
-
+        
+        @include mq("mobile"){
+            width: 99vw;
+        }
+        
         @include mq("tablet"){
             width: 50%;
         }
 
+    
         &-home{
             display: flex;
             flex-direction: row;
@@ -78,6 +84,7 @@
             box-sizing: border-box;
             flex-direction: column;
             width: 100%;
+            flex-wrap: wrap;
 
             &-happening{
                 display: flex;
@@ -143,7 +150,6 @@
             width: auto;
             flex-direction: row;
             justify-content:space-between ;
-            border-width: 30px;
             padding-top: 10px;
 
             @include mq("mobile"){
@@ -151,7 +157,8 @@
             }
 
             @include mq("tablet"){
-                display: flex;            
+                display: flex;
+                flex-wrap: wrap;            
             }
             
             &-icon{
@@ -180,6 +187,7 @@
                     justify-content: center;
                     background-color: $color-tweet;
                     border-radius: 20px;
+                    cursor: pointer;
                 }
                 
                 button:hover{
@@ -325,12 +333,18 @@
     .mobil-tweet{
         display:flex;
         bottom: 55px;
-        right: 10px;
+        right: 12px;
         position: fixed;
         box-sizing: border-box;
         border-radius: 25px;
         height: 40px;
+        width: 40px;
+        justify-content: center;
+        align-items: center;
         background-color: $color-tweet;
+        overflow: hidden;
+        
+        
         
         @include mq("mobile"){
                 display: flex;

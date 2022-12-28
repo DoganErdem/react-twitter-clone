@@ -12,181 +12,22 @@ import { FiShare } from "react-icons/fi";
 import { GiFeather } from "react-icons/gi";
 
 import LeftSide from "./components/leftside/index";
+import RightSide from "./components/rightside/index";
 
 function App() {
   const [tweet, setTweet] = useState([]);
   const [id, setId] = useState(0);
-  const [input, setInput] = useState("");
+  const [text, setText] = useState("");
 
   const handleTweet = () => {
-    setTweet((tweet) => [{ text: input, id: id }, ...tweet]);
-    setInput("");
+    setTweet((tweet) => [{ text: text, id: id }, ...tweet]);
+    setText("");
     setId(id + 1);
   };
 
-  const Search = () => {
-    return (
-      <div className="search">
-        <div className="search-icon">
-          <BiSearch size={22} />
-        </div>
-        <div className="search-text">
-          <input
-            className="search-text-tweet"
-            type={"text"}
-            placeholder="Search Twitter"
-          ></input>
-        </div>
-      </div>
-    );
-  };
+  
 
-  const FollowAdvices = () => {
-    return (
-      <div className="who">
-        <div className="who-text">
-          <span>Who to follow</span>
-        </div>
-        <a href="">
-          <div className="who-follow">
-            <div className="who-follow-name">
-              <BsPersonCircle size={30} color="white" />
-              <div className="who-follow-name-name">
-                <div className="who1">
-                  <div className="who-name">Volkan Günay</div>
-                  <div className="who-mail">@volkangünay</div>
-                </div>
-                <div className="who-follow-follow">
-                  <span>Follow</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div className="who-follow">
-            <div className="who-follow-name">
-              <BsPersonCircle size={30} color="white" />
-              <div className="who-follow-name-name">
-                <div className="who1">
-                  <div className="who-name">Galatasaray</div>
-                  <div className="who-mail">@galatasaray</div>
-                </div>
-                <div className="who-follow-follow">
-                  <span>Follow</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="" className="who-show">
-          <div className="who-show-more">
-            <span>Show more</span>
-          </div>
-        </a>
-      </div>
-    );
-  };
-
-  const Trends = () => {
-    return (
-      <div className="trend">
-        <div className="trend-text">
-          <span>Trends for you</span>
-        </div>
-        <a href="">
-          <div className="trend-box">
-            <div className="trend-box-top">
-              <span>Trending in Turkey</span>
-              <RiMoreFill className="icon-more" />
-            </div>
-            <div>Dünya Kupası</div>
-            <div className="trend-box-bottom">54k tweet</div>
-          </div>
-        </a>
-        <a href="">
-          <div className="trend-box">
-            <div className="trend-box-top">
-              <span>Trending in Turkey</span>
-              <RiMoreFill className="icon-more" />
-            </div>
-            <div>Dünya Kupası</div>
-            <div className="trend-box-bottom">54k tweet</div>
-          </div>
-        </a>
-        <a href="">
-          <div className="trend-box">
-            <div className="trend-box-top">
-              <span>Trending in Turkey</span>
-              <RiMoreFill className="icon-more" />
-            </div>
-            <div>Dünya Kupası</div>
-            <div className="trend-box-bottom">54k tweet</div>
-          </div>
-        </a>
-        <a href="">
-          <div className="trend-box">
-            <div className="trend-box-top">
-              <span>Trending in Turkey</span>
-              <RiMoreFill className="icon-more" />
-            </div>
-            <div>Dünya Kupası</div>
-            <div className="trend-box-bottom">54k tweet</div>
-          </div>
-        </a>
-        <a href="">
-          <div className="trend-box">
-            <div className="trend-box-top">
-              <span>Trending in Turkey</span>
-              <RiMoreFill className="icon-more" />
-            </div>
-            <div>Dünya Kupası</div>
-            <div className="trend-box-bottom">54k tweet</div>
-          </div>
-        </a>
-        <a href="">
-          <div className="trend-box">
-            <div className="trend-box-top">
-              <span>Trending in Turkey</span>
-              <RiMoreFill className="icon-more" />
-            </div>
-            <div>Dünya Kupası</div>
-            <div className="trend-box-bottom">54k tweet</div>
-          </div>
-        </a>
-        <a href="">
-          <div className="trend-box">
-            <div className="trend-box-top">
-              <span>Trending in Turkey</span>
-              <RiMoreFill className="icon-more" />
-            </div>
-            <div>Dünya Kupası</div>
-            <div className="trend-box-bottom">54k tweet</div>
-          </div>
-        </a>
-        <a href="">
-          <div className="trend-box">
-            <div className="trend-box-top">
-              <span>Trending in Turkey</span>
-              <RiMoreFill className="icon-more" />
-            </div>
-            <div>Dünya Kupası</div>
-            <div className="trend-box-bottom">54k tweet</div>
-          </div>
-        </a>
-      </div>
-    );
-  };
-
-  const RightSide = () => {
-    return (
-      <div className="rigthside">
-        <Search />
-        <Trends />
-        <FollowAdvices />
-      </div>
-    );
-  };
+  
 
   const Tweet = (text) => {
     return (
@@ -252,8 +93,8 @@ function App() {
             <div className="what-happening">
               <input
                 type={"text"}
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
+                value={text}
+                onChange={(e) => setText(e.target.value)}
                 placeholder="What's happening?"
               ></input>
             </div>
@@ -312,7 +153,7 @@ function App() {
         </div>
 
         <div className="mobil-tweet" onClick={handleTweet}>
-          <GiFeather className="twt-feather" size={40} color="white" />
+          <GiFeather className="twt-feather" size={28} color="white" />
         </div>
         <div className="bottom">
           <div className="bottom-icon">

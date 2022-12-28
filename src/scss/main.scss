@@ -1,7 +1,8 @@
 @import "mixing";
-@import "leftside";
+@import "../components/leftside/leftside.scss";
 @import "tweet";
 @import "rightside";
+@import "variable";
 
 
 .container{
@@ -11,7 +12,8 @@
     flex-flow: row nowrap;
     margin: 0;
     width: 100%;
-    color: white;    
+    color: white;
+    min-height: 100vh;    
 }
 
 

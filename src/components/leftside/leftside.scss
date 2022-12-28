@@ -1,4 +1,4 @@
-@import "variable";
+@import "/src/scss/variable.scss";
 .leftside {
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@
         max-width: 30%;
     }
 
-    &-ust {
+    &-top {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -36,16 +36,9 @@
             flex-direction: column;
             height: 100%;
             justify-content: space-between;
+            
 
-            span {
-                @include mq("tablet") {
-                    display: none;
-                }
-
-                @include mq("desktop") {
-                    display: flex;
-                }
-            }
+            
 
             &-twitter {
                 display: flex;
@@ -59,12 +52,15 @@
                 justify-content: flex-start;
                 color: white;
                 text-decoration: none;
-                padding-right: 2rem;
+                padding-right: 1.5rem;
+                padding-left: 1.5rem;
+                flex-wrap: wrap;
 
                 &:first-child {
                     &:hover {
                         background-color: rgba(59, 228, 220, 0.3);
                         padding-right: 0.5rem;
+                        padding-left: 0.5rem;
                     }
                 }
 
@@ -72,7 +68,8 @@
                     background-color: rgba(59, 228, 220, 0.3);
                     border-radius: 15px;
                     width: fit-content; 
-                    padding-right: 2rem;
+                    padding-right: 1.5rem;
+                    padding-left: 1.5rem;
                 }
 
                 span {
@@ -82,7 +79,7 @@
                 }
             }
 
-            .twt {
+            .button {
                 display: flex;
                 margin: 0;
                 padding: 4px 0px;
@@ -94,6 +91,16 @@
                 border-radius: 25px;
                 color: white;
                 font-size: 16px;
+                cursor: pointer;
+                
+                
+
+                @include mq("tablet"){
+                    display: flex;
+                    width: auto;
+                    justify-content: center;
+                
+                }
 
                 &:hover {
                     background-color: $color-tweet-hover;
@@ -103,7 +110,7 @@
 
                 &-tweet {
                     @include mq("tablet") {
-                        display: none;
+                        display: flex;
                     }
                     @include mq("desktop") {
                         display: flex;
@@ -112,6 +119,11 @@
                 }
 
                 &-feather {
+
+                    @include mq("tablet") {
+                        display: none;
+                    }
+
                     @include mq("desktop") {
                         display: none;
                     }
@@ -120,7 +132,7 @@
         }
     }
 
-    &-alt {
+    &-bottom {
         display: flex;
         box-sizing: border-box;
         justify-content: center;
