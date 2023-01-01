@@ -1,0 +1,70 @@
+[33mcommit 8d2916f2eb66501ed4e830dc2669439c423321e4[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Doğan Erdem Kara <derdemkara@gmail.com>
+Date:   Sun Jan 1 23:44:42 2023 +0300
+
+    feed structure and feed.scss are added in compenent folder. Rightside.scss is added in rightside folder
+
+[33mcommit b0c974655c349b167091681927fbd8a91a0932c8[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Doğan Erdem Kara <derdemkara@gmail.com>
+Date:   Thu Dec 29 00:15:14 2022 +0300
+
+    leftside component structure is created(leftside.scss is added) and rightside compenent folder is created
+
+[33mcommit 396776c4abd8d7ec4d5772f04abfedf58886a0b4[m
+Author: Volkan Günay <devdarfy@gmail.com>
+Date:   Tue Dec 27 19:55:27 2022 +0300
+
+    General fixes
+
+[33mcommit edd0421a49c966b70fab9cf572a9223a490bd74f[m
+Author: Volkan Günay <devdarfy@gmail.com>
+Date:   Tue Dec 27 19:10:53 2022 +0300
+
+    Added leftside component
+
+[33mcommit 3e4b2790c9206b76187f9c66efa57544537819f1[m
+Author: Doğan Erdem Kara <derdemkara@gmail.com>
+Date:   Tue Dec 27 18:05:45 2022 +0300
+
+    twitter clone projesi
+
+[33mcommit 5ce924b3b8f6bd51359d5badc6f4d446faca453f[m
+Author: Doğan Erdem Kara <derdemkara@gmail.com>
+Date:   Wed Nov 30 23:46:03 2022 +0300
+
+    Initialize project using Create React App
+[33mcommit 8d2916f2eb66501ed4e830dc2669439c423321e4[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Doğan Erdem Kara <derdemkara@gmail.com>
+Date:   Sun Jan 1 23:44:42 2023 +0300
+
+    feed structure and feed.scss are added in compenent folder. Rightside.scss is added in rightside folder
+
+[33mcommit b0c974655c349b167091681927fbd8a91a0932c8[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Doğan Erdem Kara <derdemkara@gmail.com>
+Date:   Thu Dec 29 00:15:14 2022 +0300
+
+    leftside component structure is created(leftside.scss is added) and rightside compenent folder is created
+
+[33mcommit 396776c4abd8d7ec4d5772f04abfedf58886a0b4[m
+Author: Volkan Günay <devdarfy@gmail.com>
+Date:   Tue Dec 27 19:55:27 2022 +0300
+
+    General fixes
+
+[33mcommit edd0421a49c966b70fab9cf572a9223a490bd74f[m
+Author: Volkan Günay <devdarfy@gmail.com>
+Date:   Tue Dec 27 19:10:53 2022 +0300
+
+    Added leftside component
+
+[33mcommit 3e4b2790c9206b76187f9c66efa57544537819f1[m
+Author: Doğan Erdem Kara <derdemkara@gmail.com>
+Date:   Tue Dec 27 18:05:45 2022 +0300
+
+    twitter clone projesi
+
+[33mcommit 5ce924b3b8f6bd51359d5badc6f4d446faca453f[m
+Author: Doğan Erdem Kara <derdemkara@gmail.com>
+Date:   Wed Nov 30 23:46:03 2022 +0300
+
+    Initialize project using Create React App
